@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/submit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/vazir_medium"
+        android:text="@string/please_submit_number"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PhoneNumberEditText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="right"
+        android:hint="@string/phoneNumber"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit_title">
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir_medium"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:fontFamily="@font/vazir_medium"
+        android:text="@string/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PhoneNumberEditText" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/submitBtn"
+        app:layout_constraintLeft_toLeftOf="@id/submitBtn"
+        app:layout_constraintRight_toRightOf="@id/submitBtn"
+        app:layout_constraintTop_toTopOf="@id/submitBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_on_boarding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_on_boarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/on_boarding_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+        <!-- markers -->
+        <LinearLayout
+            android:id="@+id/on_boarding_marker_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/on_boarding_initial_circle"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_green_circle" />
+
+            <View
+                android:id="@+id/on_boarding_middle_circle"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_gray_circle" />
+
+            <View
+                android:id="@+id/on_boarding_last_circle"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_gray_circle" />
+        </LinearLayout>
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btn_sign_up_on_board"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toStartOf="@+id/btn_login_on_board"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/on_boarding_marker_container" />
+
+        <Button
+            android:id="@+id/btn_login_on_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_sign_up_on_board"
+            app:layout_constraintTop_toTopOf="@+id/btn_sign_up_on_board" />
+
+        <Button
+            android:id="@+id/on_board_bottom_msg"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:text="@string/on_boarding_bottom_text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_up_on_board" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

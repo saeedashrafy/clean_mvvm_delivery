@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_food_row"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/category_scroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_food_row"
+        android:layout_marginRight="@dimen/padding_food_row"
+        android:fadingEdgeLength="0dp"
+        android:paddingBottom="@dimen/padding_food_row"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/category_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:selectionRequired="true"
+            app:singleSelection="true" />
+
+    </HorizontalScrollView>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_scroll" />
+
+
+    <com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateCenteredRoundCornerProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        app:rcAnimationSpeedScale="0.75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rcBackgroundColor="#0A000000"
+        app:rcProgressColor="@color/orange_400"
+        />
+
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:text="Retry"
+        app:layout_constraintBottom_toTopOf="@+id/errorMessageTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retryButton" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/errorGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="retryButton,errorMessageTextView"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

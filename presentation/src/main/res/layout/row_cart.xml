@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/padding_horizontal_cart_row"
+    android:paddingRight="@dimen/padding_horizontal_cart_row"
+    android:paddingTop="@dimen/padding_vertical_cart_row"
+    android:paddingBottom="@dimen/padding_vertical_cart_row">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_food"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_cart_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_horizontal_cart_row"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintRight_toLeftOf="@id/image_view_food"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_view_food" />
+
+
+    <TextView
+        android:id="@+id/text_view_cart_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_food" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="@dimen/width_image_add"
+        android:layout_height="@dimen/width_image_add"
+        android:layout_marginRight="@dimen/padding_horizontal_cart_row"
+        app:layout_constraintRight_toLeftOf="@id/image_view_food"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_food"
+        app:srcCompat="@drawable/ic_inc" />
+
+    <TextView
+        android:id="@+id/text_view_cart_count"
+        android:layout_width="@dimen/width_image_add"
+        android:layout_height="@dimen/width_image_add"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintBottom_toBottomOf="@id/imageButtonAdd"
+        app:layout_constraintRight_toLeftOf="@+id/imageButtonAdd"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonAdd"
+        tools:text="1" />
+
+
+    <com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateCenteredRoundCornerProgressBar
+        android:id="@+id/progress_cart"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_cart_count"
+        app:layout_constraintLeft_toLeftOf="@id/text_view_cart_count"
+        app:layout_constraintRight_toRightOf="@id/text_view_cart_count"
+        app:layout_constraintTop_toTopOf="@id/text_view_cart_count"
+        app:rcAnimationSpeedScale="0.75"
+        app:rcBackgroundColor="#0A000000"
+        app:rcProgressColor="@color/orange_400" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageButtonRemove"
+        android:layout_width="@dimen/width_image_add"
+        android:layout_height="@dimen/width_image_add"
+        app:layout_constraintTop_toTopOf="@id/imageButtonAdd"
+        app:layout_constraintRight_toLeftOf="@id/text_view_cart_count"
+        app:srcCompat="@drawable/ic_minus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

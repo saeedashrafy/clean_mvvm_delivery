@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_horizontal">25dp</dimen>
+    <dimen name="width_image_add">32dp</dimen>
+    <dimen name="corner_radius_food">12dp</dimen>
+    <dimen name="padding_food_row">15dp</dimen>
+    <dimen name="padding_horizontal_cart_row">15dp</dimen>
+    <dimen name="padding_vertical_cart_row">7dp</dimen>
+    <dimen name="margin_fragment_cart">16dp</dimen>
+    <dimen name="margin__vertical_fragment_cart">10dp</dimen>
+    <dimen name="margin_food_details">16dp</dimen>
+    <dimen name="width_large_image_add">42dp</dimen>
+</resources>

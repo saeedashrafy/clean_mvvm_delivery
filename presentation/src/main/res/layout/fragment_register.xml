@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_register">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_frame_register"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sendnumber" />
+
+    <TextView
+        android:id="@+id/submit_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_horizontal"
+        android:gravity="center"
+        android:text="@string/please_submit_number"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_frame_register" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EditText_phone_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_horizontal"
+        android:hint="@string/phoneNumber"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit_title">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textAppearance="?attr/textAppearanceCaption" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/margin_horizontal"
+        android:enabled="false"
+        android:text="@string/continuation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/submitBtn"
+        app:layout_constraintRight_toRightOf="@id/submitBtn"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintTop_toTopOf="@id/submitBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:elevation="12dp"
+
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="Retry"
+
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/errorMessageTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/errorMessageTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#424242"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retryButton" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/errorGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="retryButton,errorMessageTextView"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

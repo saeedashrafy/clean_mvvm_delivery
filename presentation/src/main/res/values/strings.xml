@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تهیه غذا</string>
+    <string name="action_settings">تنظیمات</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="login">ورود</string>
+
+    <string name="phoneNumber">شماره همراه</string>
+    <string name="submit">تایید</string>
+    <string name="select_language">لطفا زبان مورد نظر را انتخاب نمایید</string>
+    <string name="please_submit_number">برای ورود شماره موبایلت رو وارد کن</string>
+    <string name="verificationCode">کد تایید</string>
+    <string name="please_submit_code">کد ارسال شده به موبایلت رو وارد کن</string>
+    <string name="continuation">ادامه</string>
+    <string name="home">خانه</string>
+    <string name="fragment_home">خانه</string>
+    <string name="fragment_profile">پروفایل</string>
+    <string name="fragment_card">سبد</string>
+    <string name="title_home">خانه</string>
+    <string name="title_profile">پروفایل</string>
+    <string name="title_card">سبد</string>
+    <string name="fragment_scan">اسکن</string>
+    <string name="title_scan">اسکن</string>
+    <string name="qr_title">اسکن کالا با QR</string>
+    <string name="nfc_title">اسکن کالا با NFC</string>
+    <string name="language_persian">فارسی</string>
+    <string name="language_english">english</string>
+    <string name="on_boarding_bottom_text">ورود به عنوان مهمان</string>
+    <string name="invalid_number_error">شماره همراه وارد شده معتبر نیست</string>
+    <string name="number_helper_text">مثال: 09121234567</string>
+    <string name="retry_send">ارسال مجدد کد</string>
+    <string name="add">افزودن</string>
+    <string name="sum">مجموع:</string>
+    <string name="gross_amount">مبلغ خالص:</string>
+    <string name="tax">مالیات:</string>
+    <string name="packaging_price">هزینه بسته بندی:</string>
+    <string name="details">جزئیات</string>
+</resources>

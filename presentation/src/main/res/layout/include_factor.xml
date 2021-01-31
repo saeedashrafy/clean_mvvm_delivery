@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/margin_fragment_cart"
+    android:paddingLeft="@dimen/margin_fragment_cart"
+    android:paddingBottom="@dimen/margin__vertical_fragment_cart"
+ android:background="@drawable/bg_shadow">
+
+
+    <TextView
+        android:id="@+id/text_view_cart_gross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gross_amount"
+        android:layout_marginTop="@dimen/margin__vertical_fragment_cart"
+        android:gravity="right"
+        android:textAppearance="?attr/textAppearanceBody2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_view_cart_gross_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_view_cart_gross" />
+
+
+    <TextView
+        android:id="@+id/text_view_packaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/packaging_price"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:layout_marginTop="@dimen/margin__vertical_fragment_cart"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/text_view_cart_gross"/>
+
+
+
+    <TextView
+        android:id="@+id/text_view_packaging_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_packaging"
+        app:layout_constraintTop_toTopOf="@id/text_view_packaging" />
+
+
+
+    <TextView
+        android:id="@+id/text_view_tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tax"
+        android:textAppearance="?attr/textAppearanceBody2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin__vertical_fragment_cart"
+        app:layout_constraintTop_toBottomOf="@id/text_view_packaging"
+        app:layout_constraintBottom_toTopOf="@id/text_view_total"/>
+
+    <TextView
+        android:id="@+id/text_view_tax_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_view_tax"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_tax" />
+
+
+    <TextView
+        android:id="@+id/text_view_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sum"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:layout_marginTop="@dimen/margin__vertical_fragment_cart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_tax"
+       app:layout_constraintBottom_toTopOf="@id/submitBtn"/>
+
+
+    <TextView
+        android:id="@+id/text_view_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_total"
+        app:layout_constraintTop_toTopOf="@id/text_view_total" />
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continuation"
+        android:layout_marginLeft="@dimen/margin_fragment_cart"
+        android:layout_marginRight="@dimen/margin_fragment_cart"
+        android:textAppearance="?attr/textAppearanceButton"
+        android:layout_marginTop="@dimen/margin__vertical_fragment_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_total"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

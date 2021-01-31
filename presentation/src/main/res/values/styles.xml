@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.BottomNavigationViewBold" parent="@style/Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/vazir_medium</item>
+        <item name="android:fontFamily">@font/vazir_medium</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <style
+        name="Widget.AppTheme.BottomNavigationView"
+        parent="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="labelVisibilityMode">selected</item>
+<!--        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>-->
+        <item name="itemTextAppearanceActive">@style/TextAppearance.AppTheme.BottomNavigation</item>
+    </style>
+
+
+</resources>
