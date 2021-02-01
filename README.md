@@ -10,5 +10,5 @@
 - Clean Architecture approach.
 
 ## **Screen shot:** 
--Screen for select Food
+- screen for select Food
 > ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/food_delivery.jpg) 
