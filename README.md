@@ -17,7 +17,7 @@ The Application consist of three layer:
 - Data
 
 |<img src="delivery_diagram.jpg" width=400/>|
-|:----:|:----:|
+|:----:|
 
 ## **Screen shot:** 
 screen for select Food and cart list
