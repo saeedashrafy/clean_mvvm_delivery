@@ -19,6 +19,7 @@ The Application consist of three layer:
 ![](delivery_diagram.jpg) 
 
 ## **Screen shot:** 
-- screen for select Food and cart list
+screen for select Food and cart list
+
 <img src="food_delivery.jpg" width=300/><img src="cart_food_delivery.jpg" width=300/> 
 
