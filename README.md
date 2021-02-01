@@ -16,7 +16,8 @@ The Application consist of three layer:
 - Domain
 - Data
 
-![](delivery_diagram.jpg) 
+|<img src="delivery_diagram.jpg" width=400/>|
+|:----:|:----:|
 
 ## **Screen shot:** 
 screen for select Food and cart list
