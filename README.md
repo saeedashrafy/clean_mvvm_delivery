@@ -1,2 +1,10 @@
 # clean_mvvm_delivery
-[![kotlin](https://img.shields.io/badge/Kotlin-1.4.xxx-blue)](https://kotlinlang.org/) [![MVI ](https://img.shields.io/badge/Architecture-MVI-brightgreen)](https://www.youtube.com/watch?v=tIPxSWx5qpk) [![coroutines](https://img.shields.io/badge/Coroutines-Asynchronous-red)](https://developer.android.com/kotlin/coroutines)
+[![kotlin](https://img.shields.io/badge/Kotlin-1.4.xxx-blue)](https://kotlinlang.org/) [![coroutines](https://img.shields.io/badge/Coroutines-Asynchronous-red)](https://developer.android.com/kotlin/coroutines)
+
+- Modularization
+- Gradle written in Kotlin DSL
+- [Coroutines](https://developer.android.com/kotlin/coroutines) and flows
+- [Room Persistence Library](https://developer.android.com/training/data-storage/room "Room Persistence Library")
+- Dependency Injection/Service Locator with [Koin](https://github.com/InsertKoinIO/koin "Koin") Library.
+- Model View Intent Architecture - MVI.
+- Clean Architecture approach.
