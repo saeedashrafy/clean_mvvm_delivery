@@ -20,7 +20,7 @@ The Application consist of three layer:
 
 ## **Screen shot:** 
 - screen for select Food
-> ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/food_delivery.jpg) 
+> ![](food_delivery.jpg=500x375) 
 
 - screen for cart
-> ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/cart_food_delivery.jpg) 
+> ![](cart_food_delivery.jpg) 
