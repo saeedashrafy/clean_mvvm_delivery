@@ -5,6 +5,9 @@
 - Gradle written in Kotlin DSL
 - [Coroutines](https://developer.android.com/kotlin/coroutines) and flows
 - [Room Persistence Library](https://developer.android.com/training/data-storage/room "Room Persistence Library")
-- Dependency Injection/Service Locator with [Koin](https://github.com/InsertKoinIO/koin "Koin") Library.
+- Dependency Injection with [Koin](https://github.com/InsertKoinIO/koin "Koin") Library.
 - Model View Intent Architecture - MVI.
 - Clean Architecture approach.
+
+-Screen for select Food
+![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/food_delivery.jpg) 
