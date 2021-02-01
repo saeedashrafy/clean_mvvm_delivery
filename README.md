@@ -9,6 +9,15 @@
 - Model View Intent Architecture - MVI.
 - Clean Architecture approach.
 
+## Architecture
+
+The Application consist of three layer:
+- Presentation
+- Domain
+- Data
+
+![](delivery_diagram.jpg) 
+
 ## **Screen shot:** 
 - screen for select Food
 > ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/food_delivery.jpg) 
