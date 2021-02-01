@@ -21,5 +21,5 @@ The Application consist of three layer:
 ## **Screen shot:** 
 screen for select Food and cart list
 
-<img src="food_delivery.jpg" width=400/><img src="cart_food_delivery.jpg" width=400/> 
-
+|<img src="food_delivery.jpg" width=400/>|<img src="cart_food_delivery.jpg" width=400/>| 
+|:----:|:----:|
