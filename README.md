@@ -16,7 +16,7 @@ The Application consist of three layer:
 - Domain
 - Data
 
-|<img src="delivery_diagram.jpg" width=400/>|
+|<img src="delivery_diagram.jpg" />|
 |:----:|
 
 ## **Screen shot:** 
