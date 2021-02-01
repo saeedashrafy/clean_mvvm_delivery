@@ -20,7 +20,5 @@ The Application consist of three layer:
 
 ## **Screen shot:** 
 - screen for select Food
-> ![](food_delivery.jpg =500x375) 
+|<img src="food_delivery.jpg" width=200/>|<img src="cart_food_delivery.jpg" width=200/>|
 
-- screen for cart
-> ![](cart_food_delivery.jpg) 
