@@ -12,3 +12,6 @@
 ## **Screen shot:** 
 - screen for select Food
 > ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/food_delivery.jpg) 
+
+- screen for cart
+> ![](https://github.com/saeedashrafy/clean_mvvm_delivery/blob/master/cart_food_delivery.jpg) 
