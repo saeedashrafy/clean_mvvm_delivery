@@ -9,6 +9,9 @@
 - Model View Intent Architecture - MVI.
 - Clean Architecture approach.
 
+# برای دوستان فارسی زبان
+- [مقاله ویرگول](https://vrgl.ir/OBqZV)
+
 ## Architecture
 
 The Application consist of three layer:
